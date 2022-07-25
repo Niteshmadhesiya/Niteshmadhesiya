@@ -1,0 +1,9 @@
+DECLARE
+type numberlist is varray(10) of int;
+n numberlist:=numberlist(10,20,30,40,50);
+BEGIN
+for i in 1..5 loop
+dbms_output.put_line(n(i));
+end loop;
+end;
+/
