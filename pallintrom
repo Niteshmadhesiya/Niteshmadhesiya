@@ -11,7 +11,7 @@ temp:=temp*10 + rem;
 n:=floor(n/10);
 end loop;
 if m=temp then
-dbms_output.put_line('No is pallintrom');
+dbms_output.put_line('Number is pallintrom');
 else
 dbms_output.put_line('Not pallintrom');
 end if;
