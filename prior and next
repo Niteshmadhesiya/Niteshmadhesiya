@@ -1,0 +1,8 @@
+DECLARE
+type numberlist is varray(10) of int;
+n numberlist:=numberlist(10,20,30,40,50);
+BEGIN
+dbms_output.put_line('prior is:'||n.prior(4));
+dbms_output.put_line('next is:'||n.next(3));
+end;
+/
