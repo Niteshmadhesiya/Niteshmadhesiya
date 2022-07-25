@@ -1,0 +1,9 @@
+DECLARE
+type numberlist is varray(10) of varchar(10);
+n numberlist:=numberlist('A','B','C','D','E');
+BEGIN
+for i in 1..5 loop
+dbms_output.put_line(n(i));
+end loop;
+end;
+/
