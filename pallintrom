@@ -1,0 +1,19 @@
+DECLARE
+n int:=151;
+m int;
+rem int;
+temp int:=0;
+begin
+m:=n;
+while n>0 loop
+rem:=mod(n,10);
+temp:=temp*10 + rem;
+n:=floor(n/10);
+end loop;
+if m=temp then
+dbms_output.put_line('No is pallintrom');
+else
+dbms_output.put_line('Not pallintrom');
+end if;
+end;
+/
