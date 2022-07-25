@@ -1,0 +1,10 @@
+DECLARE
+type numberlist is varray(10) of int;
+n numberlist:=numberlist(10,20,30,40,50);
+BEGIN
+dbms_output.put_line('first number is:'||n.count);
+dbms_output.put_line('last number is:'||n.limit);
+n.delete();
+dbms_output.put_line('Total no is'||n.count);
+end;
+/
